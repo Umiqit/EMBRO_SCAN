@@ -1,0 +1,75 @@
+{
+  "mission_id": "20260227_003214",
+  "capture_mode": "continuous",
+  "captured_frames": 1,
+  "config": {
+    "airsim": {
+      "host": "127.0.0.1",
+      "port": 41451
+    },
+    "drone": {
+      "name": "",
+      "speed": 3.0,
+      "altitude": -15.0,
+      "camera_pitch": -30.0
+    },
+    "camera": {
+      "capture_mode": "continuous",
+      "capture_interval_sec": 2.0,
+      "capture_interval_dist": 5.0,
+      "width": 1920,
+      "height": 1080,
+      "fov": 90,
+      "stabilization_delay": 0.5,
+      "png_compression": 3
+    },
+    "mission": {
+      "waypoints": [
+        [
+          0,
+          0,
+          -15
+        ],
+        [
+          100,
+          0,
+          -15
+        ]
+      ],
+      "hover_time": 0.5
+    },
+    "paths": {
+      "data_dir": "./data",
+      "raw_dir": "./data/raw",
+      "poses_dir": "./data/poses"
+    }
+  },
+  "frames": [
+    {
+      "frame_id": 0,
+      "filename": "frame_0000_20260227_003223_618178.png",
+      "timestamp": "20260227_003223_618178",
+      "unix_time": 1772141543.6333573,
+      "width": 256,
+      "height": 144,
+      "color_corrected": true,
+      "position": {
+        "x": 105.49149322509766,
+        "y": -0.034170959144830704,
+        "z": -16.45345115661621
+      },
+      "orientation": {
+        "w": 0.03685559332370758,
+        "x": -0.40574005246162415,
+        "y": -0.004225250333547592,
+        "z": -0.9132353067398071
+      },
+      "velocity": {
+        "x": -0.4237370491027832,
+        "y": -0.00033359351800754666,
+        "z": -0.10495458543300629
+      },
+      "mode": "continuous"
+    }
+  ]
+}

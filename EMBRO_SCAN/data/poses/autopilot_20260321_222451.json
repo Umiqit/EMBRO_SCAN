@@ -1,0 +1,143 @@
+{
+  "mission_id": "20260321_222451",
+  "mode": "autopilot",
+  "captured_frames": 0,
+  "total_distance": 14.960698574781418,
+  "panoramas_count": 0,
+  "duration_sec": 603.433349609375,
+  "config": {
+    "airsim": {
+      "host": "127.0.0.1",
+      "port": 41451
+    },
+    "drone": {
+      "name": "",
+      "speed": 3.0,
+      "altitude": -15.0,
+      "rotation_speed": 30.0,
+      "auto_speed": 3.0,
+      "auto_altitude": -15.0,
+      "auto_camera_pitch": -75.0,
+      "lateral_speed": 3.0
+    },
+    "cameras": {
+      "road_scanner": {
+        "name": "road_cam",
+        "pitch": -75.0,
+        "yaw": 0.0,
+        "roll": 0.0,
+        "width": 640,
+        "height": 480,
+        "fov": 60
+      },
+      "main": {
+        "name": "0",
+        "width": 1280,
+        "height": 720,
+        "fov": 90
+      }
+    },
+    "camera": {
+      "capture_mode": "stop_and_shoot",
+      "capture_interval_sec": 2.0,
+      "capture_interval_dist": 5.0,
+      "width": 1280,
+      "height": 720,
+      "fov": 90,
+      "stabilization_delay": 0.5,
+      "panorama_directions": [
+        {
+          "yaw": 0,
+          "pitch": 0,
+          "name": "front"
+        },
+        {
+          "yaw": 90,
+          "pitch": 0,
+          "name": "right"
+        },
+        {
+          "yaw": 180,
+          "pitch": 0,
+          "name": "back"
+        },
+        {
+          "yaw": 270,
+          "pitch": 0,
+          "name": "left"
+        },
+        {
+          "yaw": 0,
+          "pitch": -90,
+          "name": "down"
+        }
+      ]
+    },
+    "detection": {
+      "hsv_ranges": [
+        {
+          "lower": [
+            0,
+            0,
+            100
+          ],
+          "upper": [
+            180,
+            50,
+            200
+          ],
+          "name": "gray_road"
+        },
+        {
+          "lower": [
+            0,
+            0,
+            200
+          ],
+          "upper": [
+            180,
+            30,
+            255
+          ],
+          "name": "white_line"
+        }
+      ],
+      "min_area": 1000,
+      "roi_y_start": 0.2,
+      "debug": true
+    },
+    "ai": {
+      "model_path": "./ai/models/yolo11m-seg.pt",
+      "conf_threshold": 0.5,
+      "center_threshold": 0.15,
+      "correction_gain": 2.5,
+      "lookahead_distance": 30.0,
+      "intersection_threshold": 0.3
+    },
+    "mission": {
+      "waypoints": [
+        [
+          0,
+          0,
+          -15
+        ],
+        [
+          100,
+          0,
+          -15
+        ]
+      ],
+      "hover_time": 0.5,
+      "max_distance": 500.0,
+      "max_time": 600.0,
+      "panorama_interval": 30.0
+    },
+    "paths": {
+      "data_dir": "./data",
+      "raw_dir": "./data/raw",
+      "poses_dir": "./data/poses",
+      "debug_dir": "./data/debug"
+    }
+  },
+  "frames": []
+}
